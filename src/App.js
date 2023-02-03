@@ -16,10 +16,10 @@ const App = () => {
   return (
     <>
       <div>
-        <Router basename="/newsApp-React">
+        <Router basename="/React-app">
           <Navbar />
           <Switch>
-            <Route exact path="/newsApp-React">
+            <Route exact path="/">
               <News
                 setProgress={setProgress}
                 apiKey={apiKey}
