@@ -6,8 +6,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 
 const App = () => {
-    const pageSize = 6;
-   const apiKey = process.env.REACT_APP_NEWS_API;
+  const pageSize = 6;
+  const apiKey = process.env.REACT_APP_NEWS_API;
 
   const [progress, setProgress] = useState(0);
   // const [apiKey, setapiKey] = useState(process.env.REACT_APP_NEWS_API);
@@ -16,7 +16,7 @@ const App = () => {
   return (
     <>
       <div>
-        <Router basename="/">
+        <Router>
           <Navbar />
           <Switch>
             <Route exact path="/">

@@ -9,7 +9,7 @@ const News = (props) => {
   const [loading, setloading] = useState(true);
   const [page, setpage] = useState(1);
   const [totalResults, settotalResults] = useState(0);
- 
+  // document.title = ` ${props.category} - NewsMonkey`;
 
   const updateNews = async () => {
     props.setProgress(10);
@@ -26,7 +26,6 @@ const News = (props) => {
   };
 
   useEffect(() => {
-     document.title = ` ${props.category} - NewsMonkey`;
     updateNews();
     // eslint-disable-next-line
   }, []);
